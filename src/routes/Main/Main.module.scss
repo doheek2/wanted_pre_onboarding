@@ -1,0 +1,25 @@
+@use '/src/styles/constants/colors';
+@use '/src/styles/constants/levels';
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/mixins/position';
+
+.main {
+  position: relative;
+  width: 360px;
+  height: 720px;
+  padding: 80px 40px 40px;
+  background-color: #fafbfe;
+  border-radius: 60px;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: colors.$BIG_TITLE;
+  }
+
+  .scroll {
+    height: 540px;
+    margin-top: 30px;
+    overflow: scroll;
+  }
+}

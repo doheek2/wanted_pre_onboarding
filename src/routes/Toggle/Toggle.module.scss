@@ -1,0 +1,62 @@
+@use '/src/styles/constants/colors';
+
+.wrapper {
+  position: relative;
+  width: 280px;
+  height: 100px;
+
+  .title {
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: colors.$TASKS_TITLE;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .toggle-btn {
+    position: relative;
+    width: 280px;
+    height: 60px;
+    padding: 6px;
+    background-color: #EBEBEB;
+    border: none;
+    border-radius: 30px;
+  }
+
+  .circle {
+    position: absolute;
+    top: 8%;
+    width: 130px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .circle-trans {
+    transition: all 0.3s ease-in-out;
+    transform: translate(138px, 0);
+  }
+
+  .btn-tab {
+    position: absolute;
+    top: -1px;
+    display: flex;
+    align-items: center;
+    width: 269px;
+    height: 60px;
+    text-align: center;
+
+    .btn-text {
+      width: 140px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #A0A1A0;
+    }
+
+    .selected {
+      color: #595959;
+    }
+  }
+}
